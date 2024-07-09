@@ -1,0 +1,14 @@
+<div class="login-page">
+    <div class="form">
+      <form class="login-form" (ngSubmit)="onLogin()" #loginform = "ngForm">
+        <label for="mobile-number">Mobile Number</label>
+        <input type="number" id="mobile-number" placeholder="Mobile Number" maxlength="10" minlength="10" [(ngModel)] = "mobile" required name="mobile"/>
+        <label for="pass-code">PassCode</label>
+        <input type="password" id="pass-code" placeholder="passcode" maxlength="4" minlength="4" [(ngModel)] = "passCode" required name="passCode"/>
+        <button type="submit">login</button>
+        <div *ngIf="errorMessage">
+          <p>{{errorMessage}}</p>
+        </div>
+      </form>
+    </div>
+  </div>

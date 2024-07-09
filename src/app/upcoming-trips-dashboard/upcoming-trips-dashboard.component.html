@@ -1,0 +1,61 @@
+<form [formGroup]="tripDetailsForm">
+<mat-grid-list cols="3" rowHeight="2:1" class="form-upcoming-trips">
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+            <mat-label>Preffered Vehicle : </mat-label>
+            <input matInput placeholder="Date and Time" formControlName="mappedVehicle"   readonly>
+          </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+            <mat-label>Start Date & Time</mat-label>
+            <input matInput placeholder="Date and Time" formControlName="journeyStartDateTime"  readonly>
+          </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+            <mat-label>Duration Of Booking:</mat-label>
+            <input matInput placeholder="Date and Time" formControlName="noOfDays" readonly>
+          </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+            <mat-label>Number Of Passengers: </mat-label>
+            <input matInput placeholder=" " formControlName="noOfPersons"  readonly>
+          </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+            <mat-label>Number Of Luggages:</mat-label>
+            <input matInput placeholder="" formControlName="noOfBags"  readonly>
+          </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+            <mat-label>Pickup Address:</mat-label>
+            <input matInput placeholder="" formControlName="pickupFrom"  readonly>
+          </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+            <mat-label>Drop of Address:</mat-label>
+            <input matInput placeholder="" formControlName="dropTo"  readonly>
+          </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+            <mat-label>User Contact Number:</mat-label>
+            <input matInput placeholder="" formControlName="localContactNumber"  readonly>
+          </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+            <mat-label>Booking Number:</mat-label>
+            <input matInput placeholder="" formControlName=""  readonly>
+          </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div class="buttons">
+  <button (click)="goToDashboard()" style="justify-content: center; margin-left: 40%; width: 175px; height: 50px; border-radius: 30px;background-color: rgb(46, 109, 234);color: antiquewhite; font-size:small;border: none;">Go Back to Dashboard</button>
+</div>
+</form>

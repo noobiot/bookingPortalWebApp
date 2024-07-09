@@ -1,0 +1,20 @@
+.upcoming-trip-form{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    padding: 10px;
+  }
+  .form-upcoming-trips{
+    margin:2%;
+    padding: 10px;
+    background-color: rgb(157, 159, 161);
+  }

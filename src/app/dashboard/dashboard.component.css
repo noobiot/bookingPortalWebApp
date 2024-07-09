@@ -1,0 +1,19 @@
+.navbar-spacer {
+    flex: 1 1 auto;
+  }
+.header-toolbar{
+    background-color: rgb(71, 73, 75);
+}
+.dashboard-content-container {
+    width: auto;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+    /* The background property is added to clearly distinguish the borders between drawer and main
+       content */
+    background: #bfc2c4;
+  }
+  .app-title{
+    color: aliceblue;
+    padding: 5px;
+  }
